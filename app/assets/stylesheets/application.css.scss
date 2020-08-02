@@ -16,29 +16,21 @@
 @import "bootstrap-sprockets";  
 @import "bootstrap";
 
+// typography styles 
 h1, h2, h3 {
     font-family: 'Varta', sans-serif;
 }
 
-
-.navbar-default .navbar-brand{
+//navbar color and opacity
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{
     color: white;
+    &:hover {
+        color: white;
+        opacity: 75%;
+    }
 }
 
-.navbar-default .navbar-brand:hover{
-    color: white;
-    opacity: 75%;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    opacity: 75%;
-}
-
+//navbar gradient
 .home-callout, .navbar {
     background: #ffd89b;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
@@ -46,10 +38,12 @@ background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, F
 
 }
 
+//no nav margin
 .navbar{
     border: none;
 }
 
+//callout statement color - white
 .home-callout {
     color: white;
 	margin-top: -20px;
