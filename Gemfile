@@ -60,3 +60,8 @@ gem 'font-awesome-sass', '4.6.2'
 
 #DB Display in console
 gem 'hirb'
+
+group :production do
+  #use PostgreSQL gem for Heroku
+  gem 'pg'
+end
