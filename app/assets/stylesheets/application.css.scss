@@ -61,3 +61,7 @@ background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, F
 .navbar-collapse{
     border: 0;
 }
+
+textarea{
+    resize:vertical;
+}
